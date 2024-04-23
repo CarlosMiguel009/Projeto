@@ -1,37 +1,157 @@
-.flex-container {
-    display: flex;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    list-style-type: none;
 }
-
-.linha {
-    flex-direction: row;
-    justify-content:space-around;
-}
-
-.coluna {
-    flex-direction: column;
-}
-
-.cabecalho {
-    background-color: #135f11;
-    height: 157px;
-    width: 98%;
-    justify-content: flex-start;
-    align-items: center;
-    border-radius: 20px;
-}
-
-.imagem {
-    width: 100%;
-    height: 650px;
-    border-radius: 20px;
-}
-
 body {
-    background-color: black;
+    background-color: white;
+    height: 100vh;
+}
+.interface {
+    max-width: 2050px;
+    margin: 0 auto;
+
 }
 
-.imagem-roupa {
-    height: 300px;
-    width: 300px;
-    border-radius: 20px;
+.logo {
+    cursor: pointer;
+}
+
+header {
+    padding: 40px 4%;
+}
+
+.cabeçalho {
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+    cursor: pointer;
+    color: #5c5c5c;
+    transition: .2s;
+}
+
+header nav ul li:hover {
+    color: #000000;
+    transform: scale(1.05);
+}
+
+header .btn-pesquisa li {
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: black;
+    color: #fff;
+    border-radius: 40px;
+    cursor: auto;
+}
+
+.imagem-seleção {
+    height: 1200px;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 15px 15px;
+}
+
+main > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main nav ul {
+    list-style-type: none;
+}
+
+main .preço li {
+    padding: 11px 100px;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 40px;
+    cursor: pointer;
+    width: 150px;
+    height: 45px;
+    max-width: 2050px;
+    margin: 0 auto;
+}
+
+main .txt-blusa {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-size: xx-large;
+    padding: 10px 10px;
+}
+
+.imagem-airmax {
+    height: 950px;
+    width: 950px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 15px 15px;
+}
+
+.img-tenis-peq {
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    margin: 10px;
+    padding: 5px 90px;
+    justify-content: space-between;
+    margin: 0  100px;
+}
+
+.nome {
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    justify-content: space-between;
+    margin: 0 190px;
+}
+
+main .preço-menor {
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    margin: 10px 190px;
+    justify-content: space-between;
+    margin-block-end: 100px;
+}
+
+main .img-tenis-redonda {
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 400px;
+    justify-content: space-between;
+    padding: 0 130px;
+    margin: 60px 0;
+}
+
+main .txt-nikeair {
+    max-width: auto;
+    font-size: 50px;
+    justify-content: space-around;
+    display: flex;
+    margin: 35px 0;
+    max-width: 660px;
 }
